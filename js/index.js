@@ -2,16 +2,17 @@ window.onload = function () {
 
     page({
 
-        id: 'div1',
-        nowNum: 5,
-        allNum: 100,
+        id: 'div1',  //生成分页需要的id
+        nowNum: 5,   //当前页
+        allNum: 100, //总页数
         callBack: function (now, all) {   //回调函数
-
-            //alert('当前页:' + now +',总共页:'+all);
+            //now为当前页，all为总页数
+            //这里可以根据当前页和总页数，通过ajax请求从后端获取数据
 
         }
 
     });
+
 
 };
 
